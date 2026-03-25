@@ -47,9 +47,13 @@
 
 /* DERECHO */
 
-#sidebarRight {
-    grid-column: 3;
-    grid-row: 2;
+.sidebar--right {
+  padding: 15px;
+  background: #f8f9fb;
+}
+
+.sidebar__section {
+  margin-bottom: 25px;
 }
 
 
