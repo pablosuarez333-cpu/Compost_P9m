@@ -37,11 +37,46 @@
     </aside>
 
     <!-- Sidebar derecho -->
-    <aside id="sidebarRight" class="sidebar">
-        <section id="calendarContainer">
-            <h2>Calendario</h2>
-        </section>
-    </aside>
+    <aside id="sidebarRight" class="sidebar sidebar--right">
+    
+    <section id="calendarContainer" class="calendar sidebar__section">
+        <h2 class="calendar__title">Calendario</h2>
+
+        <div class="calendar__grid">
+            <div class="calendar__day">L</div>
+            <div class="calendar__day">M</div>
+            <div class="calendar__day">X</div>
+            <div class="calendar__day">J</div>
+            <div class="calendar__day">V</div>
+            <div class="calendar__day">S</div>
+            <div class="calendar__day">D</div>
+
+            <!-- días ejemplo -->
+            <div class="calendar__date">1</div>
+            <div class="calendar__date">2</div>
+            <div class="calendar__date calendar__date--active">3</div>
+            <div class="calendar__date">4</div>
+            <div class="calendar__date">5</div>
+        </div>
+    </section>
+
+    <section class="notifications sidebar__section">
+        <h2 class="notifications__title">Notificaciones</h2>
+
+        <ul class="notifications__list">
+            <li class="notifications__item">
+                <p class="notifications__text">Lote 001 alcanzó 60°C</p>
+                <span class="notifications__time">Hace 5 min</span>
+            </li>
+
+            <li class="notifications__item notifications__item--alert">
+                <p class="notifications__text">pH fuera de rango</p>
+                <span class="notifications__time">Hace 20 min</span>
+            </li>
+        </ul>
+    </section>
+
+</aside>
 
     <!-- CONTENIDO -->
     <main id="mainContent">
