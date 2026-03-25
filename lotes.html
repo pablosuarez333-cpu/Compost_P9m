@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lotes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/Compost P9m/Style/grid-flexbox.css">
+    <link rel="stylesheet" href="/Compost P9m/Style/styles.css">
+</head>
+
+<body id="appContainer">
+
+    <header id="headerMain">
+        <button id="btnToggleMenu" aria-label="Abrir menú">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="6" width="18" height="2" fill="#333"/>
+                <rect x="3" y="11" width="18" height="2" fill="#333"/>
+                <rect x="3" y="16" width="18" height="2" fill="#333"/>
+            </svg>
+        </button>
+        <h1 id="appTitle">Sistema Compost</h1>
+        <button id="btnToggleCalendar">🔔</button>
+    </header>
+
+    <!-- Sidebar izquierdo -->
+    <aside id="sidebarLeft" class="sidebar">
+        <nav id="navMenu">
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="lotes.html">Lotes</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ol>
+        </nav>
+    </aside>
+
+    <aside id="sidebarRight" class="sidebar">
+        <div id="calendarContainer"></div>
+    </aside>
+
+    <main id="mainContent">
+
+        <section id="lotesActivos">
+
+            <div class="loteCard" data-lote-id="1">
+
+                <img src="img/lote1.jpg" class="loteImg">
+
+                <h3 class="loteNombre">Lote 001</h3>
+
+                <div class="estadoActual">
+                    <p class="tempPromedio" id="tempProm_1">--</p>
+                    <p class="phActual" id="ph_1">--</p>
+                    <p class="etapaActual" id="etapa_1">--</p>
+                </div>
+
+                <table class="tablaBitacoras" data-lote-id="1">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>T1</th>
+                            <th>T2</th>
+                            <th>T3</th>
+                            <th>Prom</th>
+                            <th>pH</th>
+                            <th>Obs</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bitacoras_1"></tbody>
+                </table>
+
+                <div class="controlLote">
+                    <p id="statusBitacora_1"></p>
+                    <p id="nextBitacora_1"></p>
+                    <p id="alertas_1"></p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="lotesFinalizados">
+
+            <table id="tablaFinalizados">
+                <thead>
+                    <tr>
+                        <th>Lote</th>
+                        <th>Inicio</th>
+                        <th>Fin</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="functions.js"></script>
+
+</body>
+
+</html>

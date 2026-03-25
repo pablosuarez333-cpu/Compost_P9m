@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/Compost P9m/Style/grid-flexbox.css">
+    <link rel="stylesheet" href="/Compost P9m/Style/styles.css">
+</head>
+
+<body id="appContainer">
+
+    <header id="headerMain">
+        <button id="btnToggleMenu" aria-label="Abrir menú">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="6" width="18" height="2" fill="#333"/>
+                <rect x="3" y="11" width="18" height="2" fill="#333"/>
+                <rect x="3" y="16" width="18" height="2" fill="#333"/>
+            </svg>
+        </button>
+        <h1 id="appTitle">Sistema Compost</h1>
+        <button id="btnToggleCalendar">🔔</button>
+    </header>
+
+    <!-- Sidebar izquierdo -->
+    <aside id="sidebarLeft" class="sidebar">
+        <nav id="navMenu">
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="lotes.html">Lotes</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ol>
+        </nav>
+    </aside>
+
+    <aside id="sidebarRight" class="sidebar">
+        <div id="calendarContainer"></div>
+    </aside>
+
+    <main id="mainContent">
+
+        <section id="registroBitacora">
+
+            <form id="formBitacora">
+
+                <select id="selectLote"></select>
+
+                <div class="inputGroup">
+                    <input type="number" id="temp1" placeholder="T1" required>
+                    <input type="number" id="temp2" placeholder="T2" required>
+                    <input type="number" id="temp3" placeholder="T3" required>
+                </div>
+
+                <p id="tempPromedioCalculado">--</p>
+
+                <input type="number" id="inputPH" step="0.1" placeholder="pH" required>
+
+                <select id="selectObservacion">
+    <option value="normal">Sin problema</option>
+    <option value="olor">Mal olor</option>
+    <option value="humedad">Exceso humedad</option>
+    <option value="seco">Resequedad</option>
+    <option value="insectos">Insectos</option>
+    <option value="estancado">Estancamiento</option>
+</select>
+
+                <p id="accionSugerida"></p>
+
+                <button type="submit" id="btnGuardarBitacora">
+Registrar
+</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="functions.js"></script>
+
+</body>
+
+</html>
