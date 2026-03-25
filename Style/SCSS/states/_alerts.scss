@@ -1,0 +1,25 @@
+.lote--critical {
+    border-left-color: $color-critical;
+    .loteHeader {
+        background: rgba($color-critical, 0.12);
+        padding: $space-xs;
+        border-radius: $radius;
+    }
+}
+
+.lote--warning {
+    border-left-color: $color-warning;
+    .loteHeader {
+        background: rgba($color-warning, 0.12);
+        padding: $space-xs;
+        border-radius: $radius;
+    }
+}
+
+.lote--ok {
+    border-left-color: $color-ok;
+}
+
+.lote--idle {
+    border-left-color: $color-idle;
+}

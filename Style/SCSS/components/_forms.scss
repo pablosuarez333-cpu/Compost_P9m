@@ -1,0 +1,18 @@
+input,
+select {
+    border: 1px solid $color-border;
+    border-radius: $radius;
+    padding: $space-sm;
+}
+
+button {
+    background: #2e86de;
+    color: white;
+    border: none;
+    border-radius: $radius;
+    padding: $space-sm;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.9;
+    }
+}

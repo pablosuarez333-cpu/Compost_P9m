@@ -1,0 +1,24 @@
+// BASE
+$color-bg: #eef1f5;
+$color-surface: #ffffff;
+$color-border: #d9dee5;
+$color-text: #1f2d3d;
+// PRIORIDAD OPERATIVA (manda sobre todo)
+$color-critical: #c0392b;
+$color-warning: #d68910;
+$color-ok: #1e8449;
+$color-idle: #7f8c8d;
+// ETAPAS (secundario)
+$mesofila: #5dade2;
+$termofila: #e67e22;
+$enfriamiento: #af7ac5;
+$maduracion: #58d68d;
+// ESPACIADO
+$space-xs: 0.3rem;
+$space-sm: 0.6rem;
+$space-md: 1rem;
+$space-lg: 1.4rem;
+// UI
+$radius: 8px;
+$shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+$shadow-hover: 0 6px 14px rgba(0, 0, 0, 0.12);

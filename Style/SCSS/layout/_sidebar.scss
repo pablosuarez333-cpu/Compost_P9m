@@ -1,0 +1,64 @@
+.sidebar {
+    background: $color-surface;
+    padding: $space-md;
+    overflow-y: auto;
+    @include transition;
+}
+
+#sidebarLeft {
+    width: 250px;
+    background: #b2b2b2;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#navMenu {
+    ol {
+        list-style: none; // quita números
+        padding: 0;
+        margin: 0;
+        li {
+            margin-bottom: 15px; // espacio entre links
+            a {
+                display: block;
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 18px;
+                padding: 10px 15px;
+                border-radius: 6px;
+                transition: all 0.2s ease;
+                &:hover {
+                    background: #2e2e45;
+                    padding-left: 20px; // pequeño desplazamiento visual
+                }
+            }
+        }
+    }
+}
+
+
+/* IZQUIERDO */
+
+#sidebarLeft {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+/* DERECHO */
+
+#sidebarRight {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+/* CONTROL JS */
+
+#sidebarLeft:not(.active) {
+    transform: translateX(-100%);
+}
+
+#sidebarRight:not(.active) {
+    transform: translateX(100%);
+}

@@ -1,0 +1,16 @@
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin card {
+    background: $color-surface;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    padding: $space-md;
+}
+
+@mixin transition {
+    transition: all 0.25s ease;
+}

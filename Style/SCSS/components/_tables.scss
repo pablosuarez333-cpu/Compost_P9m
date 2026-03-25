@@ -1,0 +1,14 @@
+.tablaBitacoras {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+    th {
+        background: #f4f6f8;
+    }
+    th,
+    td {
+        border: 1px solid $color-border;
+        padding: $space-xs;
+        text-align: center;
+    }
+}

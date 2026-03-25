@@ -1,0 +1,251 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #eef1f5;
+  color: #1f2d3d;
+}
+
+#headerMain {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background: #ffffff;
+  border-bottom: 1px solid #d9dee5;
+}
+#headerMain button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+#headerMain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+#headerMain button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#headerMain button svg {
+  width: 24px;
+  height: 24px;
+}
+#headerMain button:hover {
+  background: #f0f0f0;
+}
+#headerMain #appTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.sidebar {
+  background: #ffffff;
+  padding: 1rem;
+  overflow-y: auto;
+  transition: all 0.25s ease;
+}
+
+#sidebarLeft {
+  width: 250px;
+  background: #b2b2b2;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#navMenu ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#navMenu ol li {
+  margin-bottom: 15px;
+}
+#navMenu ol li a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+#navMenu ol li a:hover {
+  background: #2e2e45;
+  padding-left: 20px;
+}
+
+/* IZQUIERDO */
+#sidebarLeft {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* DERECHO */
+#sidebarRight {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* CONTROL JS */
+#sidebarLeft:not(.active) {
+  transform: translateX(-100%);
+}
+
+#sidebarRight:not(.active) {
+  transform: translateX(100%);
+}
+
+.loteCard {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  border-left: 6px solid transparent;
+  transition: all 0.25s ease;
+}
+.loteCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* CABECERA DEL LOTE */
+.loteHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* MÉTRICAS CLAVE */
+.loteMetrics {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+/* INFO SECUNDARIA */
+.loteMeta {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.tablaBitacoras {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+.tablaBitacoras th {
+  background: #f4f6f8;
+}
+.tablaBitacoras th,
+.tablaBitacoras td {
+  border: 1px solid #d9dee5;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+input,
+select {
+  border: 1px solid #d9dee5;
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+
+button {
+  background: #2e86de;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+#calendarContainer {
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+/* TEMPERATURA */
+.temp-high {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.temp-mid {
+  color: #d68910;
+}
+
+.temp-low {
+  color: #1e8449;
+}
+
+/* PH */
+.ph-acid {
+  color: #8e44ad;
+}
+
+.ph-neutral {
+  color: #1e8449;
+}
+
+.ph-alkaline {
+  color: #2980b9;
+}
+
+/* INACTIVIDAD */
+.lote-inactivo {
+  opacity: 0.6;
+}
+
+.lote--critical {
+  border-left-color: #c0392b;
+}
+.lote--critical .loteHeader {
+  background: rgba(192, 57, 43, 0.12);
+  padding: 0.3rem;
+  border-radius: 8px;
+}
+
+.lote--warning {
+  border-left-color: #d68910;
+}
+.lote--warning .loteHeader {
+  background: rgba(214, 137, 16, 0.12);
+  padding: 0.3rem;
+  border-radius: 8px;
+}
+
+.lote--ok {
+  border-left-color: #1e8449;
+}
+
+.lote--idle {
+  border-left-color: #7f8c8d;
+}/*# sourceMappingURL=styles.css.map */

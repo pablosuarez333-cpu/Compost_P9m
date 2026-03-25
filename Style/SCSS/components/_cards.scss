@@ -1,0 +1,38 @@
+.loteCard {
+    @include card;
+    display: flex;
+    flex-direction: column;
+    gap: $space-sm;
+    border-left: 6px solid transparent;
+    @include transition;
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: $shadow-hover;
+    }
+}
+
+
+/* CABECERA DEL LOTE */
+
+.loteHeader {
+    @include flex-between;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+
+/* MÉTRICAS CLAVE */
+
+.loteMetrics {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+
+/* INFO SECUNDARIA */
+
+.loteMeta {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}

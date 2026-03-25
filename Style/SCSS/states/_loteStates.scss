@@ -1,0 +1,36 @@
+/* TEMPERATURA */
+
+.temp-high {
+    color: $color-critical;
+    font-weight: bold;
+}
+
+.temp-mid {
+    color: $color-warning;
+}
+
+.temp-low {
+    color: $color-ok;
+}
+
+
+/* PH */
+
+.ph-acid {
+    color: #8e44ad;
+}
+
+.ph-neutral {
+    color: $color-ok;
+}
+
+.ph-alkaline {
+    color: #2980b9;
+}
+
+
+/* INACTIVIDAD */
+
+.lote-inactivo {
+    opacity: 0.6;
+}
